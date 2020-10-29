@@ -113,6 +113,67 @@ body {
   line-height: 70px;
 }
 
+/* --------------------------------------
+# style overlay
+---------------------------------------*/
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: 9999;
+  transition: .8s;
+  text-align: center;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  padding: 80px;
+}
+
+.overlay:target img {
+  animation: zoomDanFade 1s;
+}
+
+.overlay .close {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  margin-left: -20px;
+  color: white;
+}
+
+.overlay:target .close {
+  animation: fadeAjah 2s;
+}
+
+
+.next img {
+  position: absolute;
+  right: 120px;
+  top: 180px;
+  width: 70px;
+  animation: fadeAjah 2s;
+}
+
+.prev {
+  position: absolute;
+  left: 120px;
+  top: 170px;
+  transform: rotate(180deg);
+  animation: fadeAjah 2s;
+}
 
 
 /* --------------------------------------
@@ -130,25 +191,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------------
 # animasi
 ---------------------------------------*/
@@ -159,5 +201,28 @@ body {
 
   100% {
     margin-top: 90px;
+  }
+}
+
+@keyframes zoomDanFade {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeAjah {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
   }
 }
