@@ -1,0 +1,163 @@
+/* --------------------------------------
+# style semua
+-----------------------------------------*/
+body {
+  font-family: cursive;
+}
+
+
+
+/* --------------------------------------
+# style jumbotron banner
+---------------------------------------*/
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 180px;
+  color: rgb(34, 34, 94);
+}
+
+.container p {
+  margin-top: 15px;
+  color: rgb(146, 146, 146);
+}
+
+.container .icondown {
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgb(34, 34, 94, 0.2);
+  position: relative;
+}
+
+.container .icondown img {
+  animation: down 2s ease infinite alternate forwards;
+  position: absolute;
+}
+
+/* --------------------------------------
+# style kontent
+---------------------------------------*/
+.kontent {
+  margin-top: 390px;
+  width: 100%;
+  height: 680px;
+  background-image: url(../img/bg-kuliner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+
+
+/* --------------------------------------
+# style box
+---------------------------------------*/
+.box {
+  padding: 50px;
+  display: inline-block;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.box .kotakli {
+  display: flex;
+  margin-top: 130px;
+}
+
+.box .kotak-gambar {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(53, 53, 121);
+  border-radius: 5px;
+  margin-left: 10px;
+  
+}
+
+.box .kotak-gambar:hover {
+  box-shadow: 2px 2px 10px rgb(116, 116, 116);
+}
+
+
+.box .nama {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  background-color:  rgb(232, 232, 232);
+  margin-top: -202px;
+  opacity: 0;
+  transition: 1s;
+}
+
+
+.box .nama:hover {
+  opacity: .8;
+  margin-top: -202px;
+}
+
+.box .nama span {
+  text-align: center;
+  font-size: 30px;
+  line-height: 200px;
+  color: rgb(34, 34, 94);
+}
+
+.box .nama-kuliner {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  line-height: 70px;
+}
+
+
+
+/* --------------------------------------
+# style footer
+---------------------------------------*/
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  background-color: rgb(34, 34, 94);
+  color: white;
+  line-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------
+# animasi
+---------------------------------------*/
+@keyframes down {
+  0% {
+    margin-top: 70px;
+  }
+
+  100% {
+    margin-top: 90px;
+  }
+}
