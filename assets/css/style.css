@@ -5,8 +5,6 @@ body {
   font-family: cursive;
 }
 
-
-
 /* --------------------------------------
 # style jumbotron banner
 ---------------------------------------*/
@@ -50,8 +48,6 @@ body {
   position: relative;
 }
 
-
-
 /* --------------------------------------
 # style box
 ---------------------------------------*/
@@ -92,7 +88,6 @@ body {
   opacity: 0;
   transition: 1s;
 }
-
 
 .box .nama:hover {
   opacity: .8;
@@ -155,9 +150,8 @@ body {
 }
 
 .overlay:target .close {
-  animation: fadeAjah 2s;
+  animation: slideDownFade 1s;
 }
-
 
 .next img {
   position: absolute;
@@ -175,7 +169,6 @@ body {
   animation: fadeAjah 2s;
 }
 
-
 /* --------------------------------------
 # style footer
 ---------------------------------------*/
@@ -188,8 +181,6 @@ body {
   color: white;
   line-height: 100px;
 }
-
-
 
 /* --------------------------------------
 # animasi
@@ -225,4 +216,16 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes slideDownFade {
+	0% {
+		opacity: 0;
+		margin-top: -20px;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
 }
